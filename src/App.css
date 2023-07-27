@@ -9,11 +9,16 @@
 
 }
 
+<<<<<<< HEAD
 .auth-form-container, .login-form, .register-form {
+=======
+.form-container, .login-form, .register-form{
+>>>>>>> 93817c4 (first commit)
   display: flex;
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 
 label {
   text-align: left;
@@ -25,10 +30,32 @@ input {
   padding: 1rem;
   border: none;
   border-radius: 10px;
+=======
+label {
+  text-align: left;
+  padding: 0.2rem;
+}
+
+input{
+  margin: 0.5rem 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+button{
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+>>>>>>> 93817c4 (first commit)
 }
 
 button:hover{
   border-color: aquamarine;
+<<<<<<< HEAD
 }
 
 button {
@@ -41,6 +68,12 @@ button {
 }
 
 .link-btn {
+=======
+  color: gray;
+}
+
+.link{
+>>>>>>> 93817c4 (first commit)
   border: none;
   background: none;
   color: white;
