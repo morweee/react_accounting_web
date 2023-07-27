@@ -1,1 +1,0 @@
-# react_accounting_web
