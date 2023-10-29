@@ -12,9 +12,8 @@ const db = mysql.createConnection(
   {
     user: "root",
     host: "localhost",
-    password: "Sss@768349251",
-    database: "accounts"
-
+    password: "morrisA131408582",
+    database: "accounting_web_test"
   }
 )
 
@@ -23,22 +22,23 @@ app.post('/register', (req, res)=>{
     const username = req.body.username;
     const email = req.body.email;
     const password = req.body.password;
+    const sql = "INSERT INTO Users (username, email, password) VALUES (?,?,?)"
 
-    db.query("INSERT INTO users (username, email, password) VALUES (?,?,?)",
-    [username, email, password],
-    (err, result) => {
+    db.query(sql, [username, email, password], (err, result) => {
         if(result)
         {
-          res.send(result);
+            res.send(result);
         }
         else{
-          res.send({message: "ENTER THE CORRECT DETAILS"});
-        }
-       
-    } 
+            res.send("ENTER THE CORRECT DETAILS");
+        }      
+      } 
     )
+    
 
 })
 
 app.listen(3001, ()=>{
-    console.log("server is running");})
+    console.log("server is running");
+  })
+
